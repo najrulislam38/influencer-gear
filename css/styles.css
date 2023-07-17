@@ -26,6 +26,15 @@ body{
 }
 
 
+img{
+    width: 100%;
+}
+
+main{
+    margin: 0px 165px;
+}
+
+
 /* header area styles */
 #header{
     margin: 85px 120px;
@@ -67,9 +76,6 @@ body{
     font-size: 1.25rem;
 }
 
-img{
-    width: 100%;
-}
 
 /* banner area styles */
 .banner-area{
@@ -110,6 +116,21 @@ img{
     background-position: center;
 }
 
+/* sponsors area styles */
+#sponsors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0px;
+    box-shadow: 0 0 1px var(--dark-color);
+}
+.sponsor-logo{
+    width: 100px;
+    text-align: center;
+}
+
 
 
 /* Responsive for X-Small mobile devices */
@@ -144,6 +165,14 @@ img{
     .banner-description{
         font-size: 0.88rem;
     }
+    
+    main{
+        margin: 0 20px
+    }
+
+    .sponsor-logo{
+        width: 55px;
+    }
 
 
 }
@@ -154,6 +183,10 @@ img{
 @media screen and (min-width: 576px) and (max-width: 768px) {
     #header{
         margin: 85px 30px;
+    }
+
+    main{
+        margin: 0 30px
     }
 
     .nav
@@ -177,6 +210,11 @@ img{
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #header{
         margin: 85px 50px;
+    }
+
+    
+    main{
+        margin: 0 60px
     }
     
     .banner-area{
