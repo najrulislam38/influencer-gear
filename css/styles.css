@@ -57,6 +57,21 @@ body{
     font-size: 1.25rem;
 }
 
+/* banner area styles */
+.banner-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.banner-title{
+    color: var(--dark-color);
+    font-family: Poppins;
+    font-size: 3.24rem;
+    font-weight: 700;
+    line-height: 70px;
+}
 
 
 
