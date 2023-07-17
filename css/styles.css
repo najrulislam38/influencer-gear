@@ -118,6 +118,7 @@ main{
 
 /* sponsors area styles */
 #sponsors{
+    margin: 100px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -168,6 +169,10 @@ main{
     
     main{
         margin: 0 20px
+    }
+
+    #sponsors{
+        margin: 50px 0;
     }
 
     .sponsor-logo{
