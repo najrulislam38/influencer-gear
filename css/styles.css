@@ -10,3 +10,98 @@ body{
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    --dark-color: #3A3A3A;
+}  
+
+
+/* header area styles */
+#header{
+    margin: 85px 120px;
+}
+
+/* nav area styles */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.brand-title{
+    color: var(--dark-color);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav > ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav li{
+    list-style: none;
+    padding: 15px 16px;
+}
+
+.nav li a{
+    color: var(--dark-color);
+    font-family: poppins;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav i{
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/* Responsive for X-Small mobile devices */
+@media screen and (max-width: 576px) {
+    #header{
+        margin: 85px 20px;
+    }
+
+    .nav
+    {
+        flex-direction: column;
+        
+    }
+
+    .nav > ul{
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+/* responsive for Small  devices */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #header{
+        margin: 85px 30px;
+    }
+
+    .nav
+    {
+        flex-direction: column;
+    }
+
+    .nav > ul{
+        margin-top: 30px;
+    }
+
+}
+
+/* Responsive for Medium devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #header{
+        margin: 85px 50px;
+    }
+}
