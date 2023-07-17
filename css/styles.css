@@ -12,8 +12,18 @@ body{
 }
 
 :root {
+    --white-color: #fff;
     --dark-color: #3A3A3A;
+    --pick-color: #E02C6D;
 }  
+
+.primary-btn{
+    color: var(--white-color);
+    background-color: var(--pick-color);
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+}
 
 
 /* header area styles */
@@ -57,12 +67,20 @@ body{
     font-size: 1.25rem;
 }
 
+img{
+    width: 100%;
+}
+
 /* banner area styles */
 .banner-area{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 70px 0;
+}
+
+.banner-content{
+    max-width: 582px;
 }
 
 .banner-title{
@@ -73,6 +91,24 @@ body{
     line-height: 70px;
 }
 
+.banner-description{
+    color: var(--dark-color);
+    font-family: Poppins;
+    font-weight: 600;
+    margin: 10px 0 25px;
+}
+
+
+.banner-btn{
+    border-radius: 40px;
+}
+
+.banner-image{
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -87,11 +123,28 @@ body{
         flex-direction: column;
         
     }
-
+    
     .nav > ul{
         flex-wrap: wrap;
         margin-top: 30px;
     }
+
+    .banner-area{
+        flex-direction: column-reverse;
+        gap: 50px;
+        text-align: center;
+    }
+
+
+    .banner-title{
+        font-size: 1.75rem;
+        line-height: normal;
+    }
+
+    .banner-description{
+        font-size: 0.88rem;
+    }
+
 
 }
 
@@ -111,6 +164,12 @@ body{
     .nav > ul{
         margin-top: 30px;
     }
+    
+    .banner-area{
+        flex-direction: column-reverse;
+        gap: 50px;
+        text-align: center;
+    }
 
 }
 
@@ -118,5 +177,11 @@ body{
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #header{
         margin: 85px 50px;
+    }
+    
+    .banner-area{
+        flex-direction: column-reverse;
+        gap: 50px;
+        text-align: center;
     }
 }
